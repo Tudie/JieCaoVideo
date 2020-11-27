@@ -1,0 +1,156 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class cn.jzvd.demo.ActivityApi { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiCustomMedia { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiExtendsNormal { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiOrientation { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiRotationVideoSize { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiUIBigChange { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiUISmallChange { <init>(); }
+-keep class cn.jzvd.demo.ActivityDirectPlay { <init>(); }
+-keep class cn.jzvd.demo.ActivityListView { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewFragmentViewPager { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewMultiHolder { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewNormal { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewRecyclerView { <init>(); }
+-keep class cn.jzvd.demo.ActivityMain { <init>(); }
+-keep class cn.jzvd.demo.ActivityTinyWindow { <init>(); }
+-keep class cn.jzvd.demo.ActivityTinyWindowRecycleView { <init>(); }
+-keep class cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder { <init>(); }
+-keep class cn.jzvd.demo.ActivityWebView { <init>(); }
+-keep class cn.jzvd.demo.ApplicationDemo { <init>(); }
+-keep class android.support.v4.view.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.JzvdStd { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdAutoCompleteAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdMp3 { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdShowShareButtonAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdShowTextureViewAfterAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdShowTitleAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdSpeed { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdTinyWindow { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdVolumeAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.MyJzvdStd { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.exoplayer2.ui.AspectRatioFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.exoplayer2.ui.SubtitleView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.exoplayer2.ui.TrackSelectionView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keepclassmembers class * { *** clickApi(android.view.View); }
+
+-keepclassmembers class * { *** clickAutoTinyListViewRecyclerView(android.view.View); }
+
+-keepclassmembers class * { *** clickAutoTinyListViewRecyclerViewMultiHolder(android.view.View); }
+
+-keepclassmembers class * { *** clickBigChange(android.view.View); }
+
+-keepclassmembers class * { *** clickChangeToExo(android.view.View); }
+
+-keepclassmembers class * { *** clickChangeToIjkplayer(android.view.View); }
+
+-keepclassmembers class * { *** clickChangeToSystem(android.view.View); }
+
+-keepclassmembers class * { *** clickCustomMediaPlayer(android.view.View); }
+
+-keepclassmembers class * { *** clickDirectPlay(android.view.View); }
+
+-keepclassmembers class * { *** clickExtendsNormalActivity(android.view.View); }
+
+-keepclassmembers class * { *** clickFullScreen(android.view.View); }
+
+-keepclassmembers class * { *** clickListView(android.view.View); }
+
+-keepclassmembers class * { *** clickListViewFragmentViewpager(android.view.View); }
+
+-keepclassmembers class * { *** clickMultiHolder(android.view.View); }
+
+-keepclassmembers class * { *** clickNormal(android.view.View); }
+
+-keepclassmembers class * { *** clickOrientation(android.view.View); }
+
+-keepclassmembers class * { *** clickPreloading(android.view.View); }
+
+-keepclassmembers class * { *** clickRecyclerView(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationAndVideoSize(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo0(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo180(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo270(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo90(android.view.View); }
+
+-keepclassmembers class * { *** clickSmallChange(android.view.View); }
+
+-keepclassmembers class * { *** clickStartPreloading(android.view.View); }
+
+-keepclassmembers class * { *** clickStartVideoAfterPreloading(android.view.View); }
+
+-keepclassmembers class * { *** clickTinyWindow(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDiaplayAdapter(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDiaplayOriginal(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDisplayFillCrop(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDisplayFillParent(android.view.View); }
+
+-keepclassmembers class * { *** clickWebView(android.view.View); }
+
+-keepclassmembers class * { *** clicksy(android.view.View); }
+

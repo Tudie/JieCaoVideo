@@ -1,0 +1,99 @@
+cn/jzvd/demo/ActivityTinyWindowRecycleViewMultiHolder.java
+ cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder
+ cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder$1
+ cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder$AdapterRecyclerView
+ cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder$AdapterRecyclerView$TextHolder
+ cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder$AdapterRecyclerView$VideoHolder
+cn/jzvd/demo/CustomJzvd/JzvdStdSpeed.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdSpeed
+cn/jzvd/demo/ActivityPreloadingList.java
+ cn.jzvd.demo.ActivityPreloadingList
+cn/jzvd/demo/AdapterRecyclerViewTiny.java
+ cn.jzvd.demo.AdapterRecyclerViewTiny
+ cn.jzvd.demo.AdapterRecyclerViewTiny$MyViewHolder
+cn/jzvd/demo/CustomJzvd/JzvdStdShowTextureViewAfterAutoComplete.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdShowTextureViewAfterAutoComplete
+cn/jzvd/demo/CustomJzvd/JzvdStdList.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdList
+cn/jzvd/demo/ActivityWebView.java
+ cn.jzvd.demo.ActivityWebView
+ cn.jzvd.demo.ActivityWebView$JZCallBack
+cn/jzvd/demo/CustomMedia/JZMediaIjk.java
+ cn.jzvd.demo.CustomMedia.JZMediaIjk
+cn/jzvd/demo/BuildConfig.java
+ cn.jzvd.demo.BuildConfig
+cn/jzvd/demo/CustomJzvd/JzvdStdShowShareButtonAfterFullscreen.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdShowShareButtonAfterFullscreen
+cn/jzvd/demo/ActivityApiOrientation.java
+ cn.jzvd.demo.ActivityApiOrientation
+cn/jzvd/demo/ActivityListViewMultiHolder.java
+ cn.jzvd.demo.ActivityListViewMultiHolder
+ cn.jzvd.demo.ActivityListViewMultiHolder$1
+ cn.jzvd.demo.ActivityListViewMultiHolder$VideoListAdapter
+ cn.jzvd.demo.ActivityListViewMultiHolder$VideoListAdapter$TextViewHolder
+ cn.jzvd.demo.ActivityListViewMultiHolder$VideoListAdapter$VideoHolder
+cn/jzvd/demo/ActivityTinyWindow.java
+ cn.jzvd.demo.ActivityTinyWindow
+cn/jzvd/demo/VideoConstant.java
+ cn.jzvd.demo.VideoConstant
+cn/jzvd/demo/CustomMedia/JZMediaExo.java
+ cn.jzvd.demo.CustomMedia.JZMediaExo
+ cn.jzvd.demo.CustomMedia.JZMediaExo$1
+ cn.jzvd.demo.CustomMedia.JZMediaExo$onBufferingUpdate
+cn/jzvd/demo/ActivityApiUIBigChange.java
+ cn.jzvd.demo.ActivityApiUIBigChange
+cn/jzvd/demo/ActivityApi.java
+ cn.jzvd.demo.ActivityApi
+cn/jzvd/demo/FragmentDemo.java
+ cn.jzvd.demo.FragmentDemo
+ cn.jzvd.demo.FragmentDemo$1
+cn/jzvd/demo/ActivityListViewRecyclerView.java
+ cn.jzvd.demo.ActivityListViewRecyclerView
+ cn.jzvd.demo.ActivityListViewRecyclerView$1
+cn/jzvd/demo/ActivityApiCustomMedia.java
+ cn.jzvd.demo.ActivityApiCustomMedia
+cn/jzvd/demo/ActivityApiRotationVideoSize.java
+ cn.jzvd.demo.ActivityApiRotationVideoSize
+cn/jzvd/demo/AdapterRecyclerView.java
+ cn.jzvd.demo.AdapterRecyclerView
+ cn.jzvd.demo.AdapterRecyclerView$MyViewHolder
+cn/jzvd/demo/CustomJzvd/JzvdStdAutoCompleteAfterFullscreen.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdAutoCompleteAfterFullscreen
+cn/jzvd/demo/ActivityListView.java
+ cn.jzvd.demo.ActivityListView
+cn/jzvd/demo/CustomMedia/JZMediaSystemAssertFolder.java
+ cn.jzvd.demo.CustomMedia.JZMediaSystemAssertFolder
+cn/jzvd/demo/ActivityListViewFragmentViewPager.java
+ cn.jzvd.demo.ActivityListViewFragmentViewPager
+ cn.jzvd.demo.ActivityListViewFragmentViewPager$MyAdapter
+cn/jzvd/demo/ActivityPreloading.java
+ cn.jzvd.demo.ActivityPreloading
+cn/jzvd/demo/CustomJzvd/MyJzvdStd.java
+ cn.jzvd.demo.CustomJzvd.MyJzvdStd
+cn/jzvd/demo/CustomJzvd/JzvdStdMp3.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdMp3
+cn/jzvd/demo/ActivityListViewNormal.java
+ cn.jzvd.demo.ActivityListViewNormal
+ cn.jzvd.demo.ActivityListViewNormal$1
+cn/jzvd/demo/ActivityTinyWindowRecycleView.java
+ cn.jzvd.demo.ActivityTinyWindowRecycleView
+ cn.jzvd.demo.ActivityTinyWindowRecycleView$1
+cn/jzvd/demo/ActivityDirectPlay.java
+ cn.jzvd.demo.ActivityDirectPlay
+cn/jzvd/demo/AdapterListView.java
+ cn.jzvd.demo.AdapterListView
+ cn.jzvd.demo.AdapterListView$ViewHolder
+cn/jzvd/demo/ActivityApiExtendsNormal.java
+ cn.jzvd.demo.ActivityApiExtendsNormal
+cn/jzvd/demo/CustomJzvd/JzvdStdShowTitleAfterFullscreen.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdShowTitleAfterFullscreen
+cn/jzvd/demo/ApplicationDemo.java
+ cn.jzvd.demo.ApplicationDemo
+cn/jzvd/demo/CustomJzvd/JzvdStdTinyWindow.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdTinyWindow
+cn/jzvd/demo/ActivityApiUISmallChange.java
+ cn.jzvd.demo.ActivityApiUISmallChange
+cn/jzvd/demo/CustomJzvd/JzvdStdVolumeAfterFullscreen.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdVolumeAfterFullscreen
+cn/jzvd/demo/ActivityMain.java
+ cn.jzvd.demo.ActivityMain

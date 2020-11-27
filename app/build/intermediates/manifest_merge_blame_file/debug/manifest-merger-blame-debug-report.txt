@@ -1,0 +1,204 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="cn.jzvd.demo"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:6:5-67
+11-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:7:5-81
+12-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[:jiaozivideoplayer] F:\Github\IndividualEvent\JieCaoVideo\jiaozivideoplayer\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
+13-->[:jiaozivideoplayer] F:\Github\IndividualEvent\JieCaoVideo\jiaozivideoplayer\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-76
+14
+15    <application
+15-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:9:5-103:19
+16        android:name="cn.jzvd.demo.ApplicationDemo"
+16-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:10:9-40
+17        android:allowBackup="false"
+17-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:11:9-36
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f3773f237a4e75b803a72a79dba3b842\core-1.3.1\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:13:9-41
+22        android:networkSecurityConfig="@xml/jz_network_security_config"
+22-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:14:9-72
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity
+25-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:17:9-26:20
+26            android:name="cn.jzvd.demo.ActivityMain"
+26-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:18:13-41
+27            android:configChanges="orientation|screenSize|keyboardHidden"
+27-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:19:13-74
+28            android:screenOrientation="portrait" >
+28-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:20:13-49
+29            <intent-filter>
+29-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:21:13-25:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:22:17-69
+30-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:22:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:24:17-77
+32-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:24:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:28:9-31:52
+36            android:name="cn.jzvd.demo.ActivityDirectPlay"
+36-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:29:13-47
+37            android:configChanges="orientation|screenSize|keyboardHidden"
+37-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:30:13-74
+38            android:screenOrientation="portrait" />
+38-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:31:13-49
+39        <activity
+39-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:32:9-35:52
+40            android:name="cn.jzvd.demo.ActivityListView"
+40-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:33:13-45
+41            android:configChanges="orientation|screenSize|keyboardHidden"
+41-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:34:13-74
+42            android:screenOrientation="portrait" />
+42-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:35:13-49
+43        <activity
+43-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:36:9-39:52
+44            android:name="cn.jzvd.demo.ActivityListViewNormal"
+44-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:37:13-51
+45            android:configChanges="orientation|screenSize|keyboardHidden"
+45-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:38:13-74
+46            android:screenOrientation="portrait" />
+46-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:39:13-49
+47        <activity
+47-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:40:9-43:52
+48            android:name="cn.jzvd.demo.ActivityListViewFragmentViewPager"
+48-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:41:13-62
+49            android:configChanges="orientation|screenSize|keyboardHidden"
+49-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:42:13-74
+50            android:screenOrientation="portrait" />
+50-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:43:13-49
+51        <activity
+51-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:44:9-47:52
+52            android:name="cn.jzvd.demo.ActivityListViewMultiHolder"
+52-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:45:13-56
+53            android:configChanges="orientation|screenSize|keyboardHidden"
+53-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:46:13-74
+54            android:screenOrientation="portrait" />
+54-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:47:13-49
+55        <activity
+55-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:48:9-51:52
+56            android:name="cn.jzvd.demo.ActivityTinyWindowRecycleView"
+56-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:49:13-58
+57            android:configChanges="orientation|screenSize|keyboardHidden"
+57-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:50:13-74
+58            android:screenOrientation="portrait" />
+58-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:51:13-49
+59        <activity
+59-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:52:9-55:52
+60            android:name="cn.jzvd.demo.ActivityTinyWindow"
+60-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:53:13-47
+61            android:configChanges="orientation|screenSize|keyboardHidden"
+61-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:54:13-74
+62            android:screenOrientation="portrait" />
+62-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:55:13-49
+63        <activity
+63-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:56:9-59:52
+64            android:name="cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder"
+64-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:57:13-69
+65            android:configChanges="orientation|screenSize|keyboardHidden"
+65-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:58:13-74
+66            android:screenOrientation="portrait" />
+66-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:59:13-49
+67        <activity
+67-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:60:9-63:52
+68            android:name="cn.jzvd.demo.ActivityApi"
+68-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:61:13-40
+69            android:configChanges="orientation|screenSize|keyboardHidden"
+69-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:62:13-74
+70            android:screenOrientation="portrait" />
+70-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:63:13-49
+71        <activity
+71-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:64:9-67:52
+72            android:name="cn.jzvd.demo.ActivityApiUISmallChange"
+72-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:65:13-53
+73            android:configChanges="orientation|screenSize|keyboardHidden"
+73-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:66:13-74
+74            android:screenOrientation="portrait" />
+74-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:67:13-49
+75        <activity
+75-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:68:9-71:52
+76            android:name="cn.jzvd.demo.ActivityApiUIBigChange"
+76-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:69:13-51
+77            android:configChanges="orientation|screenSize|keyboardHidden"
+77-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:70:13-74
+78            android:screenOrientation="portrait" />
+78-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:71:13-49
+79        <activity
+79-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:72:9-75:52
+80            android:name="cn.jzvd.demo.ActivityApiRotationVideoSize"
+80-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:73:13-57
+81            android:configChanges="orientation|screenSize|keyboardHidden"
+81-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:74:13-74
+82            android:screenOrientation="portrait" />
+82-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:75:13-49
+83        <activity
+83-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:76:9-79:52
+84            android:name="cn.jzvd.demo.ActivityApiCustomMedia"
+84-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:77:13-51
+85            android:configChanges="orientation|screenSize|keyboardHidden"
+85-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:78:13-74
+86            android:screenOrientation="portrait" />
+86-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:79:13-49
+87        <activity
+87-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:80:9-83:52
+88            android:name="cn.jzvd.demo.ActivityListViewRecyclerView"
+88-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:81:13-57
+89            android:configChanges="orientation|screenSize|keyboardHidden"
+89-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:82:13-74
+90            android:screenOrientation="portrait" />
+90-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:83:13-49
+91        <activity
+91-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:84:9-87:52
+92            android:name="cn.jzvd.demo.ActivityWebView"
+92-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:85:13-44
+93            android:configChanges="orientation|screenSize|keyboardHidden"
+93-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:86:13-74
+94            android:screenOrientation="portrait" />
+94-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:87:13-49
+95        <activity
+95-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:88:9-91:52
+96            android:name="cn.jzvd.demo.ActivityApiOrientation"
+96-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:89:13-51
+97            android:configChanges="orientation|screenSize|keyboardHidden"
+97-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:90:13-74
+98            android:screenOrientation="portrait" />
+98-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:91:13-49
+99        <activity
+99-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:92:9-95:52
+100            android:name="cn.jzvd.demo.ActivityApiExtendsNormal"
+100-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:93:13-53
+101            android:configChanges="orientation|screenSize|keyboardHidden"
+101-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:94:13-74
+102            android:screenOrientation="portrait" />
+102-->F:\Github\IndividualEvent\JieCaoVideo\app\src\main\AndroidManifest.xml:95:13-49
+103
+104        <!-- <activity -->
+105        <!-- android:name=".ActivityPreloading" -->
+106        <!-- android:configChanges="orientation|screenSize|keyboardHidden" -->
+107        <!-- android:screenOrientation="portrait" /> -->
+108
+109    </application>
+110
+111</manifest>

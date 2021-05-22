@@ -13,8 +13,8 @@ cn/jzvd/demo/AdapterRecyclerViewTiny.java
  cn.jzvd.demo.AdapterRecyclerViewTiny$MyViewHolder
 cn/jzvd/demo/CustomJzvd/JzvdStdShowTextureViewAfterAutoComplete.java
  cn.jzvd.demo.CustomJzvd.JzvdStdShowTextureViewAfterAutoComplete
-cn/jzvd/demo/CustomJzvd/JzvdStdList.java
- cn.jzvd.demo.CustomJzvd.JzvdStdList
+cn/jzvd/demo/CustomJzvd/JzvdStdVolumeAfterFullscreen.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdVolumeAfterFullscreen
 cn/jzvd/demo/ActivityWebView.java
  cn.jzvd.demo.ActivityWebView
  cn.jzvd.demo.ActivityWebView$JZCallBack
@@ -44,9 +44,8 @@ cn/jzvd/demo/ActivityApiUIBigChange.java
  cn.jzvd.demo.ActivityApiUIBigChange
 cn/jzvd/demo/ActivityApi.java
  cn.jzvd.demo.ActivityApi
-cn/jzvd/demo/FragmentDemo.java
- cn.jzvd.demo.FragmentDemo
- cn.jzvd.demo.FragmentDemo$1
+cn/jzvd/demo/ActivityApiUISmallChange.java
+ cn.jzvd.demo.ActivityApiUISmallChange
 cn/jzvd/demo/ActivityListViewRecyclerView.java
  cn.jzvd.demo.ActivityListViewRecyclerView
  cn.jzvd.demo.ActivityListViewRecyclerView$1
@@ -68,8 +67,8 @@ cn/jzvd/demo/ActivityListViewFragmentViewPager.java
  cn.jzvd.demo.ActivityListViewFragmentViewPager$MyAdapter
 cn/jzvd/demo/ActivityPreloading.java
  cn.jzvd.demo.ActivityPreloading
-cn/jzvd/demo/CustomJzvd/MyJzvdStd.java
- cn.jzvd.demo.CustomJzvd.MyJzvdStd
+cn/jzvd/demo/ActivityMain.java
+ cn.jzvd.demo.ActivityMain
 cn/jzvd/demo/CustomJzvd/JzvdStdMp3.java
  cn.jzvd.demo.CustomJzvd.JzvdStdMp3
 cn/jzvd/demo/ActivityListViewNormal.java
@@ -91,9 +90,10 @@ cn/jzvd/demo/ApplicationDemo.java
  cn.jzvd.demo.ApplicationDemo
 cn/jzvd/demo/CustomJzvd/JzvdStdTinyWindow.java
  cn.jzvd.demo.CustomJzvd.JzvdStdTinyWindow
-cn/jzvd/demo/ActivityApiUISmallChange.java
- cn.jzvd.demo.ActivityApiUISmallChange
-cn/jzvd/demo/CustomJzvd/JzvdStdVolumeAfterFullscreen.java
- cn.jzvd.demo.CustomJzvd.JzvdStdVolumeAfterFullscreen
-cn/jzvd/demo/ActivityMain.java
- cn.jzvd.demo.ActivityMain
+cn/jzvd/demo/CustomJzvd/JzvdStdList.java
+ cn.jzvd.demo.CustomJzvd.JzvdStdList
+cn/jzvd/demo/FragmentDemo.java
+ cn.jzvd.demo.FragmentDemo
+ cn.jzvd.demo.FragmentDemo$1
+cn/jzvd/demo/CustomJzvd/MyJzvdStd.java
+ cn.jzvd.demo.CustomJzvd.MyJzvdStd

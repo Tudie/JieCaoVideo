@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JieCaoVideo.iml" filepath="$PROJECT_DIR$/.idea/modules/JieCaoVideo.iml" group="JieCaoVideo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="JieCaoVideo/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jiaozivideoplayer/jiaozivideoplayer.iml" filepath="$PROJECT_DIR$/.idea/modules/jiaozivideoplayer/jiaozivideoplayer.iml" group="JieCaoVideo/jiaozivideoplayer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JieCaoVideo.iml" filepath="$PROJECT_DIR$/.idea/modules/JieCaoVideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JieCaoVideo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JieCaoVideo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jiaozivideoplayer/JieCaoVideo.jiaozivideoplayer.iml" filepath="$PROJECT_DIR$/.idea/modules/jiaozivideoplayer/JieCaoVideo.jiaozivideoplayer.iml" />
     </modules>
   </component>
 </project>

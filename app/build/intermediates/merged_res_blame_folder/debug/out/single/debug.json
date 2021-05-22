@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_listview_viewpager.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_listview_viewpager.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_videoview_tiny.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\item_videoview_tiny.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_api_rotation_videosize.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_api_rotation_videosize.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_share_pressed.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-xxhdpi\\share_pressed.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_header_auto_tiny_normal.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\header_auto_tiny_normal.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_directly_play.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_directly_play.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_std_with_share_button.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\layout_std_with_share_button.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ui_big_change.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_ui_big_change.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_auto_tiny_list.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_auto_tiny_list.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ui_small_change.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_ui_small_change.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_listview_normal.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_listview_normal.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_listview.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_listview.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_webview.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_webview.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_preloading.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_preloading.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_auto_tiny.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_auto_tiny.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_std_speed.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\layout_std_speed.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tiny_window.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_tiny_window.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recyclerview_content.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_recyclerview_content.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_share_normal.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-xxhdpi\\share_normal.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_api_custom_mediaplayer.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_api_custom_mediaplayer.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_list.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\layout_list.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_orientation.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_orientation.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skin_enlarge_video.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\drawable\\skin_enlarge_video.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_api.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_api.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_extends_normal.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\activity_extends_normal.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skin_shrink_video.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\drawable\\skin_shrink_video.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_share_selector.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\drawable\\share_selector.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_jz_layout_standard_mp3.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\jz_layout_standard_mp3.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skin_seek_progress.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\drawable\\skin_seek_progress.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_videoview.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\item_videoview.xml"
+    },
+    {
+        "merged": "D:\\Project\\Tool\\JieCaoVideo\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_textview.xml.flat",
+        "source": "D:\\Project\\Tool\\JieCaoVideo\\app\\src\\main\\res\\layout\\item_textview.xml"
+    }
+]

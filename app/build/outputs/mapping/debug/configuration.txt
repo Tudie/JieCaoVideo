@@ -1,0 +1,591 @@
+# The proguard configuration file for the following section is D:\Project\Tool\JieCaoVideo\app\build\intermediates\proguard-files\proguard-android.txt-4.2.1
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
+# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
+# will be ignored by new version of the Android plugin for Gradle.
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize steps (and performs some
+# of these optimizations on its own).
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+-dontoptimize
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Preserve some attributes that may be required for reflection.
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class com.google.android.vending.licensing.ILicensingService
+-dontnote com.android.vending.licensing.ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+-dontnote com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# The support libraries contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontnote android.support.**
+-dontnote androidx.**
+-dontwarn android.support.**
+-dontwarn androidx.**
+
+# This class is deprecated, but remains for backward compatibility.
+-dontwarn android.util.FloatMath
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+-keep class androidx.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+
+# These classes are duplicated between android.jar and core-lambda-stubs.jar.
+-dontnote java.lang.invoke.**
+
+# End of content from D:\Project\Tool\JieCaoVideo\app\build\intermediates\proguard-files\proguard-android.txt-4.2.1
+# The proguard configuration file for the following section is D:\Project\Tool\JieCaoVideo\app\proguard-rules.pro
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in /Users/Nathen/WorkEnv/android-sdk-macosx/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the proguardFiles
+# directive in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keep public class cn.jzvd.JZMediaSystem {*; }
+-keep public class cn.jzvd.demo.CustomMedia.CustomMedia {*; }
+-keep public class cn.jzvd.demo.CustomMedia.JZMediaIjk {*; }
+-keep public class cn.jzvd.demo.CustomMedia.JZMediaSystemAssertFolder {*; }
+
+
+-keep class tv.danmaku.ijk.media.player.** {*; }
+-dontwarn tv.danmaku.ijk.media.player.*
+-keep interface tv.danmaku.ijk.media.player.** { *; }
+# End of content from D:\Project\Tool\JieCaoVideo\app\proguard-rules.pro
+# The proguard configuration file for the following section is D:\Project\Tool\JieCaoVideo\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class cn.jzvd.demo.ActivityApi { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiCustomMedia { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiExtendsNormal { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiOrientation { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiRotationVideoSize { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiUIBigChange { <init>(); }
+-keep class cn.jzvd.demo.ActivityApiUISmallChange { <init>(); }
+-keep class cn.jzvd.demo.ActivityDirectPlay { <init>(); }
+-keep class cn.jzvd.demo.ActivityListView { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewFragmentViewPager { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewMultiHolder { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewNormal { <init>(); }
+-keep class cn.jzvd.demo.ActivityListViewRecyclerView { <init>(); }
+-keep class cn.jzvd.demo.ActivityMain { <init>(); }
+-keep class cn.jzvd.demo.ActivityTinyWindow { <init>(); }
+-keep class cn.jzvd.demo.ActivityTinyWindowRecycleView { <init>(); }
+-keep class cn.jzvd.demo.ActivityTinyWindowRecycleViewMultiHolder { <init>(); }
+-keep class cn.jzvd.demo.ActivityWebView { <init>(); }
+-keep class cn.jzvd.demo.ApplicationDemo { <init>(); }
+-keep class android.support.v4.view.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.JzvdStd { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdAutoCompleteAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdMp3 { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdShowShareButtonAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdShowTextureViewAfterAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdShowTitleAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdSpeed { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdTinyWindow { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.JzvdStdVolumeAfterFullscreen { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class cn.jzvd.demo.CustomJzvd.MyJzvdStd { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.exoplayer2.ui.AspectRatioFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.exoplayer2.ui.SubtitleView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.exoplayer2.ui.TrackSelectionView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keepclassmembers class * { *** clickApi(android.view.View); }
+
+-keepclassmembers class * { *** clickAutoTinyListViewRecyclerView(android.view.View); }
+
+-keepclassmembers class * { *** clickAutoTinyListViewRecyclerViewMultiHolder(android.view.View); }
+
+-keepclassmembers class * { *** clickBigChange(android.view.View); }
+
+-keepclassmembers class * { *** clickChangeToExo(android.view.View); }
+
+-keepclassmembers class * { *** clickChangeToIjkplayer(android.view.View); }
+
+-keepclassmembers class * { *** clickChangeToSystem(android.view.View); }
+
+-keepclassmembers class * { *** clickCustomMediaPlayer(android.view.View); }
+
+-keepclassmembers class * { *** clickDirectPlay(android.view.View); }
+
+-keepclassmembers class * { *** clickExtendsNormalActivity(android.view.View); }
+
+-keepclassmembers class * { *** clickFullScreen(android.view.View); }
+
+-keepclassmembers class * { *** clickListView(android.view.View); }
+
+-keepclassmembers class * { *** clickListViewFragmentViewpager(android.view.View); }
+
+-keepclassmembers class * { *** clickMultiHolder(android.view.View); }
+
+-keepclassmembers class * { *** clickNormal(android.view.View); }
+
+-keepclassmembers class * { *** clickOrientation(android.view.View); }
+
+-keepclassmembers class * { *** clickPreloading(android.view.View); }
+
+-keepclassmembers class * { *** clickRecyclerView(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationAndVideoSize(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo0(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo180(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo270(android.view.View); }
+
+-keepclassmembers class * { *** clickRotationTo90(android.view.View); }
+
+-keepclassmembers class * { *** clickSmallChange(android.view.View); }
+
+-keepclassmembers class * { *** clickStartPreloading(android.view.View); }
+
+-keepclassmembers class * { *** clickStartVideoAfterPreloading(android.view.View); }
+
+-keepclassmembers class * { *** clickTinyWindow(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDiaplayAdapter(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDiaplayOriginal(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDisplayFillCrop(android.view.View); }
+
+-keepclassmembers class * { *** clickVideoImageDisplayFillParent(android.view.View); }
+
+-keepclassmembers class * { *** clickWebView(android.view.View); }
+
+-keepclassmembers class * { *** clicksy(android.view.View); }
+
+
+# End of content from D:\Project\Tool\JieCaoVideo\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\c8d0b0b3c2744bc9f0da1b22a647faf0\appcompat-1.2.0\proguard.txt
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
+# keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
+-keep class androidx.appcompat.widget.SearchView { <init>(...); }
+
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl* {
+  <methods>;
+}
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\c8d0b0b3c2744bc9f0da1b22a647faf0\appcompat-1.2.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\0f834c62d53dfa28777309377065df14\recyclerview-1.1.0\proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# When layoutManager xml attribute is used, RecyclerView inflates
+#LayoutManagers' constructors using reflection.
+-keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
+    public <init>(android.content.Context, android.util.AttributeSet, int, int);
+    public <init>();
+}
+
+-keepclassmembers class androidx.recyclerview.widget.RecyclerView {
+    public void suppressLayout(boolean);
+    public boolean isLayoutSuppressed();
+}
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\0f834c62d53dfa28777309377065df14\recyclerview-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\4edc83c8c36f2989ef3e64dbd27786bd\jetified-glide-4.12.0\proguard.txt
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule {
+ <init>(...);
+}
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+-keep class com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
+  *** rewind();
+}
+
+# Uncomment for DexGuard only
+#-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\4edc83c8c36f2989ef3e64dbd27786bd\jetified-glide-4.12.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\09b9af19a79696f0a64aa92a503f266a\vectordrawable-animated-1.1.0\proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# keep setters in VectorDrawables so that animations can still work.
+-keepclassmembers class androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$* {
+   void set*(***);
+   *** get*();
+}
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\09b9af19a79696f0a64aa92a503f266a\vectordrawable-animated-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\01634f1ae4ba3efd979ffe23b7dc20c1\media-1.0.1\proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class androidx.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\01634f1ae4ba3efd979ffe23b7dc20c1\media-1.0.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\8536da16aa5c0108c221e92d96eee07b\core-1.3.1\proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$BuilderImpl* {
+  <methods>;
+}
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\8536da16aa5c0108c221e92d96eee07b\core-1.3.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\0c22095311ea9a1900bfe460a5083918\jetified-exoplayer-core-2.11.3\proguard.txt
+# Proguard rules specific to the core module.
+
+# Constant folding for resource integers may mean that a resource passed to this method appears to be unused. Keep the method to prevent this from happening.
+-keep class com.google.android.exoplayer2.upstream.RawResourceDataSource {
+  public static android.net.Uri buildRawResourceUri(int);
+}
+
+# Methods accessed via reflection in DefaultExtractorsFactory
+-dontnote com.google.android.exoplayer2.ext.flac.FlacLibrary
+-keepclassmembers class com.google.android.exoplayer2.ext.flac.FlacLibrary {
+  public static boolean isAvailable();
+}
+
+# Some members of this class are being accessed from native methods. Keep them unobfuscated.
+-keep class com.google.android.exoplayer2.video.VideoDecoderOutputBuffer {
+  *;
+}
+
+# Constructors accessed via reflection in DefaultRenderersFactory
+-dontnote com.google.android.exoplayer2.ext.vp9.LibvpxVideoRenderer
+-keepclassmembers class com.google.android.exoplayer2.ext.vp9.LibvpxVideoRenderer {
+  <init>(long, android.os.Handler, com.google.android.exoplayer2.video.VideoRendererEventListener, int);
+}
+-dontnote com.google.android.exoplayer2.ext.av1.Libgav1VideoRenderer
+-keepclassmembers class com.google.android.exoplayer2.ext.av1.Libgav1VideoRenderer {
+  <init>(long, android.os.Handler, com.google.android.exoplayer2.video.VideoRendererEventListener, int);
+}
+-dontnote com.google.android.exoplayer2.ext.opus.LibopusAudioRenderer
+-keepclassmembers class com.google.android.exoplayer2.ext.opus.LibopusAudioRenderer {
+  <init>(android.os.Handler, com.google.android.exoplayer2.audio.AudioRendererEventListener, com.google.android.exoplayer2.audio.AudioProcessor[]);
+}
+-dontnote com.google.android.exoplayer2.ext.flac.LibflacAudioRenderer
+-keepclassmembers class com.google.android.exoplayer2.ext.flac.LibflacAudioRenderer {
+  <init>(android.os.Handler, com.google.android.exoplayer2.audio.AudioRendererEventListener, com.google.android.exoplayer2.audio.AudioProcessor[]);
+}
+-dontnote com.google.android.exoplayer2.ext.ffmpeg.FfmpegAudioRenderer
+-keepclassmembers class com.google.android.exoplayer2.ext.ffmpeg.FfmpegAudioRenderer {
+  <init>(android.os.Handler, com.google.android.exoplayer2.audio.AudioRendererEventListener, com.google.android.exoplayer2.audio.AudioProcessor[]);
+}
+
+# Constructors accessed via reflection in DefaultExtractorsFactory
+-dontnote com.google.android.exoplayer2.ext.flac.FlacExtractor
+-keepclassmembers class com.google.android.exoplayer2.ext.flac.FlacExtractor {
+  <init>();
+}
+
+# Constructors accessed via reflection in DefaultDataSource
+-dontnote com.google.android.exoplayer2.ext.rtmp.RtmpDataSource
+-keepclassmembers class com.google.android.exoplayer2.ext.rtmp.RtmpDataSource {
+  <init>();
+}
+
+# Constructors accessed via reflection in DefaultDownloaderFactory
+-dontnote com.google.android.exoplayer2.source.dash.offline.DashDownloader
+-keepclassmembers class com.google.android.exoplayer2.source.dash.offline.DashDownloader {
+  <init>(android.net.Uri, java.util.List, com.google.android.exoplayer2.offline.DownloaderConstructorHelper);
+}
+-dontnote com.google.android.exoplayer2.source.hls.offline.HlsDownloader
+-keepclassmembers class com.google.android.exoplayer2.source.hls.offline.HlsDownloader {
+  <init>(android.net.Uri, java.util.List, com.google.android.exoplayer2.offline.DownloaderConstructorHelper);
+}
+-dontnote com.google.android.exoplayer2.source.smoothstreaming.offline.SsDownloader
+-keepclassmembers class com.google.android.exoplayer2.source.smoothstreaming.offline.SsDownloader {
+  <init>(android.net.Uri, java.util.List, com.google.android.exoplayer2.offline.DownloaderConstructorHelper);
+}
+
+# Constructors accessed via reflection in DownloadHelper
+-dontnote com.google.android.exoplayer2.source.dash.DashMediaSource$Factory
+-keepclasseswithmembers class com.google.android.exoplayer2.source.dash.DashMediaSource$Factory {
+  <init>(com.google.android.exoplayer2.upstream.DataSource$Factory);
+}
+-dontnote com.google.android.exoplayer2.source.hls.HlsMediaSource$Factory
+-keepclasseswithmembers class com.google.android.exoplayer2.source.hls.HlsMediaSource$Factory {
+  <init>(com.google.android.exoplayer2.upstream.DataSource$Factory);
+}
+-dontnote com.google.android.exoplayer2.source.smoothstreaming.SsMediaSource$Factory
+-keepclasseswithmembers class com.google.android.exoplayer2.source.smoothstreaming.SsMediaSource$Factory {
+  <init>(com.google.android.exoplayer2.upstream.DataSource$Factory);
+}
+
+# Don't warn about checkerframework and Kotlin annotations
+-dontwarn org.checkerframework.**
+-dontwarn kotlin.annotations.jvm.**
+-dontwarn javax.annotation.**
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\0c22095311ea9a1900bfe460a5083918\jetified-exoplayer-core-2.11.3\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\032e2fd19f7672ce848eda5088c84cba\versionedparcelable-1.1.0\proguard.txt
+-keep public class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\032e2fd19f7672ce848eda5088c84cba\versionedparcelable-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\985057339529940e5a443ed6831f23fc\lifecycle-runtime-2.1.0\proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\985057339529940e5a443ed6831f23fc\lifecycle-runtime-2.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\c34ec19b1fff330d5eae5b069834f01e\lifecycle-viewmodel-2.1.0\proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\c34ec19b1fff330d5eae5b069834f01e\lifecycle-viewmodel-2.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\6202dc886ecf044967a5a9a99c53eef2\jetified-savedstate-1.0.0\proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\6202dc886ecf044967a5a9a99c53eef2\jetified-savedstate-1.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\65c170f7d0e69d5e6dec21c05c2c50d4\rules\lib\META-INF\proguard\androidx-annotations.pro
+-keep,allowobfuscation @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+# End of content from C:\Users\EDZ\.gradle\caches\transforms-2\files-2.1\65c170f7d0e69d5e6dec21c05c2c50d4\rules\lib\META-INF\proguard\androidx-annotations.pro
+# The proguard configuration file for the following section is <unknown>
+-ignorewarnings
+# End of content from <unknown>
